@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nur Mohamad</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Nur Mohamad — Statistics student at the University of Rajshahi working in bioinformatics, plant genomics, computational drug design and biostatistics.">
+<meta name="keywords" content="Nur Mohamad, Statistics, Bioinformatics, GWAS, QTL, Transcriptomics, Molecular docking, Biostatistics, University of Rajshahi">
+<meta name="author" content="Nur Mohamad">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nur Mohamad — Statistics & Bioinformatics">
+<meta property="og:description" content="Statistics student at the University of Rajshahi working where statistics meets genomics, drug discovery and public health.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0f6b5b">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400;1,7..72,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  /* apply saved theme before paint (no flash) */
+  try { var t = localStorage.getItem("nm-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-mark" id="brandMark">NM</span>
+      <span class="brand-name" id="brandName">Nur Mohamad</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Sections"></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme" title="Switch theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 14.6A8.5 8.5 0 0 1 9.4 3.8a8.5 8.5 0 1 0 10.8 10.8Z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow" id="heroLoc"></p>
+        <h1 class="hero-name" id="heroName">Nur Mohamad</h1>
+        <p class="hero-role"><span id="typed">Statistician</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="hero-tag" id="heroTag"></p>
+        <div class="hero-cta" id="heroCta"></div>
+        <div class="socials" id="heroSocial"></div>
+      </div>
+      <figure class="plot-card" aria-label="Decorative Manhattan plot">
+        <div class="plot-head">
+          <span class="mono">manhattan(gwas)</span>
+          <span class="mono muted">p &lt; 5×10⁻⁸</span>
+        </div>
+        <canvas id="manhattan" width="560" height="300"></canvas>
+        <figcaption class="mono muted">Chromosome &rarr; &nbsp;·&nbsp; y = −log₁₀(p)</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div id="sections"></div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner" id="footer"></div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript><p class="wrap">Please enable JavaScript to view this website.</p></noscript>
+
+<script src="data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
